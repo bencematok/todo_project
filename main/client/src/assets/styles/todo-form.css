@@ -1,0 +1,11 @@
+.label {
+    display: block;
+}
+
+.label-wrapper input:not([type='submit']) {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.25rem;
+    padding-bottom: 0;
+    border: 1px solid rgb(150 150 150 / 0.7);
+}

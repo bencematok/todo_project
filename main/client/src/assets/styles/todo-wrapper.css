@@ -1,0 +1,15 @@
+.todo-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(210 210 210 / 0.3);
+    border: 1px solid rgb(150 150 150 / 0.3);
+    padding-left: 0.5rem;
+    margin-block: 0.25rem;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
