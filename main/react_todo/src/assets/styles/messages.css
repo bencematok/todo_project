@@ -1,0 +1,11 @@
+.message {
+    letter-spacing: 1.15px;
+}
+
+.message-success {
+    color: rgb(30, 217, 13);
+}
+
+.message-failure {
+    color: rgb(226, 15, 15);
+}
