@@ -21,8 +21,10 @@ export const putTodo = (req, res) => {
             console.error(error.stack);
             res.status(500).json({ message: error.message });
         } finally {
-            client.close();
+            if (client) {
+                client.close();
+            };
         };
     };
     mongo();
-}
+};

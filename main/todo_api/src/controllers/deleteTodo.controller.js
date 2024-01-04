@@ -19,8 +19,10 @@ export const deleteTodo = (req, res) => {
             console.error(error.stack);
             res.status(500).json({ success: false, message: error.message });
         } finally {
-            client.close();
-        }
+            if (client) {
+                client.close();
+            };
+        };
     };
     mongo();
 };
